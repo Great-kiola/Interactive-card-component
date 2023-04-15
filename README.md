@@ -37,7 +37,9 @@ Use this section to recap over some of your major learnings while working throug
 
 ## Author
 
-<a href=" https://www.frontendmentor.io/profile/great-kiola" target =_blank />
+<div>
+    <a href=" https://www.frontendmentor.io/profile/great-kiola" target =_blank />
+</div>
 
 - Frontend Mentor - [@great-kiola](https://www.frontendmentor.io/profile/great-kiola)
 
