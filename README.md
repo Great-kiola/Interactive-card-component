@@ -36,6 +36,7 @@ Users should be able to:
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 ## Author
+<a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
 
 <a href=" https://www.frontendmentor.io/profile/great-kiola" target =_blank ></a>
 
