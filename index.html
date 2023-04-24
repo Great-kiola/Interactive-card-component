@@ -26,7 +26,7 @@
             <h1 id="number" class="card_number">0000 0000 0000 0000</h1>
             <div class="cardDetails">
               <p id="name">Jane Appleseed</p>
-              <p id="exp">00/00</p>
+              <p><Span class="months">00</Span> / <span class="years">00</span></p>
             </div>
 
 
@@ -48,9 +48,8 @@
         <div id="formData">
           <form>
             <div class="cardHolderName">
-              <div class="holderText">
+              <div class="holderText ">
                 <label for="cardHolder"> Cardholder Name</label>
-                <!-- <span class="textError">cant be _blank</span> -->
               </div>
 
               <input id="cardHolder" type="text" placeholder="e.g. Jane Appleseed" required />
@@ -62,9 +61,9 @@
                 id="cardNumber"
                 type="number"
                 placeholder="e.g. 1234 5678 9123 0000" 
-                oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
-                minlength="16"
-                maxlength="16"
+                oninput="if(this.value.length > this.max) this.value = this.value.slice(0,this.max)"
+                min="16"
+                max="16"
                 required
               />  
             </div>
@@ -75,20 +74,20 @@
               <div class="date_input">
                 <input
                   type="number" 
-                  class="months"
+                  class="monthsInp"
                   placeholder="MM"
-                  oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
-                  minlength="2"
-                  maxlength="2"
+                  oninput="if(this.value.length > this.max) this.value = this.value.slice(0,this.max)"
+                  min="2"
+                  max="2"
                   required
                 />
     
                 <input
                   type="number"
-                  class="years"
-                  oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
-                  minlength="3"
-                  maxlength="3"
+                  class="yearsInp"
+                  oninput="if(this.value.length > this.max) this.value = this.value.slice(0,this.max)"
+                  min="4"
+                  max="4"
                   placeholder="YY" required
                 />
   
@@ -96,12 +95,15 @@
             </div>
             
             <div class="cardDateCvc">
-              <label for="cvc">CVC</label>
-              <input type="number" id="cvc" 
-                oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
+              <label for="cvc_number">CVC</label>
+              <input
+                id="cvc_number"
+                type="number"
+                placeholder="e.g. 123" 
+                oninput="if(this.value.length > this.max) this.value = this.value.slice(0,this.max)"
                 minlength="3"
-                maxlength="3"
-                placeholder="e.g. 123"
+                max="3"
+                required
               />
             </div>
   

@@ -18,6 +18,16 @@ body {
 .error{
   border: 2px solid var(--inputerrors);
 }
+.error_message{
+  gap: 0;
+}
+.error_message::after{
+  content: "Can't be blank";
+  color: var(--inputerrors);
+  margin-top: .2rem;
+  font-size: small;
+}
+
 .textError{
   font-size: .8rem;
   color: var(--inputerrors);
@@ -109,6 +119,10 @@ input{
   font-size: .9rem;
   border: 1.2px solid var(--Lightgrayishviolet);
   border-radius: 6px;
+}
+
+input:focus{
+  outline-color: hsl(249, 99%, 64%);
 }
 
 input::placeholder {
