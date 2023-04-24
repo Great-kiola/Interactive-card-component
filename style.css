@@ -11,34 +11,34 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-
-
 }
 
-.error{
+.error {
   border: 2px solid var(--inputerrors);
 }
-.error_message{
+
+.error_message {
   gap: 0;
 }
-.error_message::after{
+
+.error_message::after {
   content: "Can't be blank";
   color: var(--inputerrors);
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   font-size: small;
 }
 
-.textError{
-  font-size: .8rem;
+.textError {
+  font-size: 0.8rem;
   color: var(--inputerrors);
 }
 
-.container{
+.container {
   display: flex;
   align-items: center;
 }
 
-.firstSection{
+.firstSection {
   position: relative;
   min-height: 100vh;
   width: 40%;
@@ -48,8 +48,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.cards{
-  position:absolute;
+.cards {
+  position: absolute;
   top: 50%;
   display: flex;
   flex-direction: column;
@@ -57,17 +57,19 @@ body {
   right: -400px;
   transform: translate(-50%, -50%);
 }
-.front_card{
+
+.front_card {
   position: relative;
   transform: translateX(-100px);
 }
 
-.card_logo{
+.card_logo {
   position: absolute;
   top: 30px;
   left: 20px;
 }
-.card_number{
+
+.card_number {
   font-weight: 500;
   color: var(--White);
   position: absolute;
@@ -75,7 +77,8 @@ body {
   left: 20px;
   letter-spacing: 2px;
 }
-.cardDetails{
+
+.cardDetails {
   color: var(--White);
   position: absolute;
   top: 170px;
@@ -85,43 +88,46 @@ body {
   justify-content: space-between;
 }
 
-.back_card{
+.back_card {
   position: relative;
 }
-.cvc{
+
+.cvc {
   position: absolute;
   top: 6.7rem;
   right: 3rem;
   color: var(--Lightgrayishviolet);
 }
 
-.secondSection{
+.secondSection {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 900px;
 }
 
-.secondSection form{
+.secondSection form {
   display: grid;
   width: 350px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
-label{
-  font-size: .8rem;
+
+label {
+  font-size: 0.8rem;
   text-transform: uppercase;
   color: var(--Verydarkviolet);
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
-input{
-  padding: .7rem;
-  font-size: .9rem;
+
+input {
+  padding: 0.7rem;
+  font-size: 0.9rem;
   border: 1.2px solid var(--Lightgrayishviolet);
   border-radius: 6px;
 }
 
-input:focus{
+input:focus {
   outline-color: hsl(249, 99%, 64%);
 }
 
@@ -135,25 +141,24 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
-
-.cardHolderName{
+.cardHolderName {
   display: flex;
   flex-direction: column;
   grid-column: 2 span;
 }
-.holderText{
+
+.holderText {
   display: flex;
   justify-content: space-between;
 }
 
-.cardNumber{
+.cardNumber {
   display: flex;
   flex-direction: column;
   grid-column: 2 span;
 }
 
-form button{
+form button {
   grid-column: 2 span;
   display: flex;
   justify-content: center;
@@ -173,7 +178,7 @@ form button{
   align-items: center;
 }
 
-.continue{
+.continue {
   width: 100%;
   padding: 15px;
   margin: 20px 0;
@@ -184,22 +189,20 @@ form button{
   cursor: pointer;
 }
 
-.cardDate{
+.cardDate {
   margin-right: 10px;
 }
 
-
-.date_input{
+.date_input {
   display: flex;
 }
 
-.date_input input{
+.date_input input {
   width: 50%;
-  margin-right:5px;
+  margin-right: 5px;
 }
 
-
-.btn:hover{
+.btn:hover {
   background-color: hsl(249, 99%, 64%);
 }
 
@@ -209,13 +212,14 @@ picture {
   display: block;
 }
 
-.thankYou{
+.thankYou {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
+
 .visibility {
   display: none;
 }
@@ -229,8 +233,9 @@ picture {
   color: hsl(228, 45%, 44%);
 }
 
-:root{
-  --activeinputborder: linear-gradient(to right, hsl(249, 99%, 64%) to hsl(278, 94%, 30% ));
+:root {
+  --activeinputborder: linear-gradient(to right,
+      hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
   --inputerrors: hsl(0, 100%, 66%);
   --White: hsl(0, 0%, 100%);
   --Lightgrayishviolet: hsl(270, 3%, 87%);

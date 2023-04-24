@@ -1,10 +1,9 @@
 # Interactive-card-component
 
-This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### Screenshot
-
-![](./screenshot.jpg)
+<img src="./assets/Screenshot.png" alt="Completed project image" width="900">
 
 ### The challenge
 
@@ -30,12 +29,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-
 ### What I learned
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 ## Author
+
 - Frontend Mentor - [@great-kiola](https://www.frontendmentor.io/profile/great-kiola)
 
 ## Acknowledgments
