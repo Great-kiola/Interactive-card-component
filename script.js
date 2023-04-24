@@ -28,8 +28,15 @@ cvcInput.addEventListener("input", () => {
 
 
 confirm.addEventListener('click', () => {
-    formdata.classList.add('visibility');
-    thankYou.classList.remove('visibility');
+
+    if (!cardInput){
+        cardInput.classList.add('error');
+    } else {
+        formdata.classList.add('visibility');
+        thankYou.classList.remove('visibility');
+    }
+
+
 
 });
 
