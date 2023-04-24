@@ -1,6 +1,6 @@
 let confirm = document.querySelector('.confirm');
 let formdata = document.querySelector('#formData');
-let thankYou = document.querySelector('#thankYou');
+let thankYou = document.querySelector('.thankYou');
 
 
 confirm.addEventListener('click', () => {

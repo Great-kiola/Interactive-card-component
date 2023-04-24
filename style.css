@@ -50,18 +50,19 @@ body {
   left: 20px;
 }
 .card_number{
+  font-weight: 500;
   color: var(--White);
   position: absolute;
   top: 120px;
   left: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .cardDetails{
   color: var(--White);
   position: absolute;
   top: 170px;
   left: 20px;
-  right: 20px;
+  right: 35px;
   display: flex;
   justify-content: space-between;
 }
