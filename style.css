@@ -11,6 +11,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Space Grotesk", sans-serif;
+
 }
 
 .container{
@@ -26,7 +27,6 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
 
 .cards{
@@ -48,11 +48,21 @@ body {
   top: 30px;
   left: 20px;
 }
-.cardDetails{
-  color: #fff;
+.card_number{
+  color: var(--White);
   position: absolute;
   top: 120px;
   left: 20px;
+  letter-spacing: 3px;
+}
+.cardDetails{
+  color: var(--White);
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -72,4 +82,13 @@ picture {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+:root{
+  --activeinputborder: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --inputerrors: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Lightgrayishviolet: hsl(270, 3%, 87%);
+  --Darkgrayishviolet: hsl(279, 6%, 55%);
+  --Verydarkviolet: hsl(278, 68%, 11%);
 }
