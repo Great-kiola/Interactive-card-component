@@ -85,7 +85,6 @@ body {
 
 .secondSection form{
   display: grid;
-  gap: 1rem;
   width: 350px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -97,10 +96,14 @@ label{
   margin-bottom: .3rem;
 }
 input{
-  padding: .5rem;
+  padding: .7rem;
   font-size: .9rem;
-  border: 1.2px solid var(--Darkgrayishviolet);
+  border: 1.2px solid var(--Lightgrayishviolet);
   border-radius: 6px;
+}
+
+input::placeholder {
+  color: var(--Lightgrayishviolet);
 }
 
 input::-webkit-outer-spin-button,
@@ -123,17 +126,52 @@ input::-webkit-inner-spin-button {
   grid-column: 2 span;
 }
 
-
-.btn{
-  width: 100%;
+form button{
+  grid-column: 2 span;
+  display: flex;
+  justify-content: center;
   padding: 15px;
-  margin: 20px auto;
+  margin: 20px 0;
   border: none;
   color: var(--White);
   background-color: var(--Verydarkviolet);
   border-radius: 5px;
   cursor: pointer;
 }
+
+#thankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.continue{
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  color: var(--White);
+  background-color: var(--Verydarkviolet);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardDate{
+  margin-right: 10px;
+}
+
+
+.date_input{
+  display: flex;
+}
+
+.date_input input{
+  width: 50%;
+  margin-right:5px;
+}
+
+
 .btn:hover{
   background-color: hsl(249, 99%, 64%);
 }

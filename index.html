@@ -45,50 +45,52 @@
 
 
       <div class="secondSection ">
-
-        <form>
-          <div class="cardHolderName">
-            <label for="cardHolder"> Cardholder Name</label>
-            <input id="cardHolder" type="text" placeholder="e.g. Jane Appleseed" required />
-          </div>
-
-          <div class="cardNumber">
-            <label for="cardNumber"> Card Number </label>
-            <input 
-              id="cardNumber"
-              type="number"
-              placeholder="e.g. 1234 5678 9123 0000" 
-              oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
-              minlength="16"
-              maxlength="16"
-              required
-            />  
-          </div>
-
-          <div class="cardDate">
-            <label for="card_date">Exp. Date (MM/YY)</label>
-            <div class="date_input">
-              <input
-                type="number" 
-                class="months"
-                placeholder="MM"
-                oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
-                minlength="2"
-                maxlength="2"
-                required
-              />
-  
-              <input
-                type="number"
-                class="years"
-                oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
-                minlength="3"
-                maxlength="3"
-                placeholder="YY" required
-              />
-
+        <div id="formData visibility">
+          <form>
+            <div class="cardHolderName">
+              <label for="cardHolder"> Cardholder Name</label>
+              <input id="cardHolder" type="text" placeholder="e.g. Jane Appleseed" required />
             </div>
-
+  
+            <div class="cardNumber">
+              <label for="cardNumber"> Card Number </label>
+              <input 
+                id="cardNumber"
+                type="number"
+                placeholder="e.g. 1234 5678 9123 0000" 
+                oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
+                minlength="16"
+                maxlength="16"
+                required
+              />  
+            </div>
+  
+            <div class="cardDate">
+  
+              <label for="card_date">Exp. Date (MM/YY)</label>
+              <div class="date_input">
+                <input
+                  type="number" 
+                  class="months"
+                  placeholder="MM"
+                  oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
+                  minlength="2"
+                  maxlength="2"
+                  required
+                />
+    
+                <input
+                  type="number"
+                  class="years"
+                  oninput="if(this.value.length > this.maxLength) this.value.slice(0,this.maxLength)"
+                  minlength="3"
+                  maxlength="3"
+                  placeholder="YY" required
+                />
+  
+              </div>
+            </div>
+            
             <div class="cardDateCvc">
               <label for="cvc">CVC</label>
               <input type="number" id="cvc" 
@@ -99,16 +101,12 @@
               />
             </div>
   
-
-          </div>
-
-          <button class="btn">Confirm</button>
-        </form>
+            <button class="confirm btn">Confirm</button>
+          </form>
+        </div>        
 
         
-
-        
-        <div class="thankYou visibility">
+        <div id="thankYou" class="visibility">
           <img src="./images/icon-complete.svg" alt="">
           <h1>Thank you!</h1>
           <p>We've added your card details</p>
@@ -125,6 +123,8 @@
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
     <a href="https://www.frontendmentor.io/profile/Great-kiola">Kilaso Olabode</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
